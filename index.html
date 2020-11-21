@@ -1,65 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="memGame.css">
-  </head>
-  <body>
-    <h1>MEMORIZE</h1>
-
-    <section class="memory-game">
-      <div class="memory-card" data-name="frog">
-        <img class="front" src="1.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="meme.css">
+  <title>Meme Machine</title>
+</head>
+<body>
+  <div>
+    <h1>MEME MACHINE</h1>
+    <form id="container">
+      <div>
+        <input type="text" id="topText" name="topText" placeholder="Enter Top Text (Optional)">
       </div>
-      <div class="memory-card" data-name="anon">
-        <img class="front" src="2.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
+      <div>
+        <input type="text" id="bottomText" name="bottomText" placeholder="Enter Bottom Text (Optional)">
+      </div>    
+      <div>
+        <input type="url" id="imagelink" name="imagelink" class="link" placeholder="Enter Image Link" required>
       </div>
-      <div class="memory-card" data-name="sky">
-        <img class="front" src="3.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
+      <div>
+        <button>Generate</button>
       </div>
-      <div class="memory-card" data-name="sunflower">
-        <img class="front" src="4.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="spider">
-        <img class="front" src="5.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="heart">
-        <img class="front" src="6.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="frog">
-        <img class="front" src="1.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="anon">
-        <img class="front" src="2.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="sky">
-        <img class="front" src="3.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="sunflower">
-        <img class="front" src="4.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="spider">
-        <img class="front" src="5.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-      <div class="memory-card" data-name="heart">
-        <img class="front" src="6.jpg" alt="heads">
-        <img class="back" src="10.jpg" alt="tails">
-      </div>
-  
-            
-    </section>  
-    <script src="memGame.js"></script>
-  </body>
+    </form>
+    <section id="memeResults">
+    </section>
+  <script src="meme.js"></script>
+</body>
 </html>
